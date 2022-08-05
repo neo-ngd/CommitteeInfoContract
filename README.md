@@ -6,7 +6,9 @@ This contract is used to add candidates relevant information, such as the candid
 
 * **mainnet:** 0xb776afb6ad0c11565e70f8ee1dd898da43e51be1
 
-* **testnet:** 0xe922910b49305ad00240cdd104fda6574e2f4d38
+* **testnet4:** 0xe922910b49305ad00240cdd104fda6574e2f4d38
+
+* **testnet5:** 0x6177bfcef0f51b5dd21b183ff89e301b9c66d71c
 
 
 ## Method Name: **setInfo**
