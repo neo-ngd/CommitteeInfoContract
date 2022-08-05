@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel;
 using Neo;
 using Neo.Cryptography.ECC;
+using Neo.SmartContract.Framework.Attributes;
 using Neo.SmartContract.Framework.Native;
 using Neo.SmartContract.Framework.Services;
 
@@ -104,7 +105,7 @@ namespace CommitteeInfoContract
         private static UInt160 ConvertToHash160(ECPoint point)
         {
             var data = _signHead.Concat((byte[])point).Concat(_signTail);
-            var hash = CryptoLib.ripemd160(CryptoLib.Sha256((ByteString)data));
+            var hash = CryptoLib.Ripemd160(CryptoLib.Sha256((ByteString)data));
             return (UInt160)hash;
         }
     }
